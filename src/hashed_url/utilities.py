@@ -47,7 +47,7 @@ def get_hash(url, valid_until=None):
     # Remove parts of the QS used to make the hash
     url = remove_params(url, [HASH_PARAM, TIME_PARAM])
     
-    hash_data = "\0".join((url, str(valid_until) or "", settings.SECRET_KEY))
+    hash_data = "\0".join((url, str(valid_until or "") or "", settings.SECRET_KEY))
     hash_ = hashlib.sha1(hash_data).hexdigest()
     
     return hash_
