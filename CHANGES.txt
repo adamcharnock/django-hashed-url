@@ -1,5 +1,11 @@
 ----
 
+Version 0.1.1, Thu 16 Feb 2012
+===============================
+
+d69368880d	Restructuring package (Adam Charnock)
+
+
 Version 0.1.0 (first version), Sat 11 Feb 2012
 ===============================================
 
