@@ -1,9 +1,11 @@
 from distutils.core import setup
 from setuptools import find_packages
 
+from hashed_url import __version__
+
 setup(
     name='django-hashed-url',
-    version="0.1",
+    version=__version__,
     description="Package for pre-authorising URLs using a hash parameter",
     author="Adam Charnock",
     author_email="adam@playnice.ly",
@@ -22,6 +24,5 @@ setup(
         "Framework :: Django",
     ],
     
-    packages=find_packages(where='src'),
-    package_dir={'': 'src'},
+    packages=find_packages(),
 )
